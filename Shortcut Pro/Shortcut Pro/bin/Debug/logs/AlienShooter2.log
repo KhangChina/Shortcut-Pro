@@ -1,4 +1,0 @@
-[D] 15:31:37.198 - [thread_0] AlienShooter2 >----< 2022-04-25 15:31:37.197 >---- (debug)
-[I] 15:31:37.200 - [thread_0] Application::initialize()
-[E] 15:31:37.201 - [thread_0] Configuration file not loaded! in 'bool __thiscall core::Configuration::initialize(const class core::EngineDelegate &)' <H:\repository\sources\core\configuration.cpp> at 30
-[E] 15:31:37.201 - [thread_0] Can't initialize component. in 'bool __thiscall core::Application::initialize(void)' <H:\repository\sources\core\application.cpp> at 172

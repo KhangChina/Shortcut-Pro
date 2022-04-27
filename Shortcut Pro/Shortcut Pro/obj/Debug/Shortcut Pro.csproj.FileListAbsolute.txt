@@ -68,3 +68,4 @@ D:\Project\C#\Shortcut Pro\Shortcut Pro\Shortcut Pro\bin\Debug\de\DevExpress.Xtr
 D:\Project\C#\Shortcut Pro\Shortcut Pro\Shortcut Pro\bin\Debug\es\DevExpress.XtraBars.v21.2.resources.dll
 D:\Project\C#\Shortcut Pro\Shortcut Pro\Shortcut Pro\bin\Debug\ja\DevExpress.XtraBars.v21.2.resources.dll
 D:\Project\C#\Shortcut Pro\Shortcut Pro\Shortcut Pro\bin\Debug\ru\DevExpress.XtraBars.v21.2.resources.dll
+D:\Project\C#\Shortcut Pro\Shortcut Pro\Shortcut Pro\obj\Debug\Shortcut_Pro.frmAbout.resources

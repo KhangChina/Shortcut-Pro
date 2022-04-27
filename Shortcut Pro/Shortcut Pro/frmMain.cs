@@ -15,6 +15,19 @@ namespace Shortcut_Pro
         shortCutHelpers shortCut = new shortCutHelpers();
         private void frmMain_Load(object sender, EventArgs e)
         {
+            
+            if (!File.Exists(shortCut.pathData))
+            {
+                //create file data
+                using (StreamWriter sw = File.CreateText(shortCut.pathData))
+                {
+                    sw.WriteLine("{");
+                    sw.WriteLine("\"shortcuts\": [");
+                    sw.WriteLine("]");
+                    sw.WriteLine("}");
+                }
+            }
+
             ReloadData();
         }
         void ReloadData()
@@ -70,14 +83,10 @@ namespace Shortcut_Pro
         }
         private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult dr = MessageBox.Show("You are you sure ?" , "Exits", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
-            if (dr == DialogResult.Yes)
+            DialogResult dr = MessageBox.Show("You are you sure ?" , "Exits", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (dr == DialogResult.No)
             {
-                string[] files = Directory.GetFiles(shortCut.pathDataResource);
-                foreach (string file in files)
-                {
-                    File.Delete(file);
-                }
+                return;
             }
         }
         private void btnAbout_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
