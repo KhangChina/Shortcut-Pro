@@ -1,0 +1,1 @@
+call cd /d D:\Games\Alien.Shooter.2.The.Legend.v1.2.1\Alien.Shooter.2.The.Legend.v1.2.1 & start AlienShooter.exe
