@@ -33,6 +33,7 @@ namespace Shortcut_Pro
         void ReloadData()
         {
             flowMain.Controls.Clear();
+            contextMenuStrip1.Items.Clear();
             var data = shortCut.getData();
             foreach (var item in data)
             {
