@@ -20,7 +20,8 @@ namespace Shortcut_Pro
             this.path = path;
             if (File.Exists(path))
             {
-                pic.Image = image;
+               // pic.Image = image;
+                groupUsShortCut.CaptionImageOptions.Image= image;
             }
             else
             {

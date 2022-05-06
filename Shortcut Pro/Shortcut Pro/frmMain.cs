@@ -16,7 +16,7 @@ namespace Shortcut_Pro
         shortCutHelpers shortCut = new shortCutHelpers();
         private void frmMain_Load(object sender, EventArgs e)
         {
-            
+            itemName.Caption +=" "+ Environment.MachineName + "❤️";
             if (!File.Exists(shortCut.pathData))
             {
                 //create file data
