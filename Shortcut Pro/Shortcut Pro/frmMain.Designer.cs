@@ -57,6 +57,8 @@
             this.flowMain.Name = "flowMain";
             this.flowMain.Size = new System.Drawing.Size(624, 533);
             this.flowMain.TabIndex = 1;
+            this.flowMain.DragDrop += new System.Windows.Forms.DragEventHandler(this.flowMain_DragDrop);
+            this.flowMain.DragOver += new System.Windows.Forms.DragEventHandler(this.flowMain_DragOver);
             // 
             // barManager1
             // 
@@ -201,6 +203,7 @@
             // 
             // frmMain
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 579);

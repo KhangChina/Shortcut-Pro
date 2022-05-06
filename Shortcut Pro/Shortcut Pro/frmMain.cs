@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace Shortcut_Pro
@@ -94,6 +95,27 @@ namespace Shortcut_Pro
         {
             frmAbout frm = new frmAbout();
             frm.ShowDialog();
+        }
+        private void flowMain_DragDrop(object sender, DragEventArgs e)
+        {
+            string path = "";
+            string[] files = e.Data.GetData(DataFormats.FileDrop) as string[]; // get all files droppeds  
+            if (files != null && files.Any())
+            {
+                path = files.First(); //select the first one  
+                string txtPath = path.Replace("\\", "/");
+                string txtName = Path.GetFileNameWithoutExtension(txtPath);
+                shortCut.AddShortCut(txtName, txtPath, "");
+                ReloadData();
+            }    
+            //MessageBox.Show(path);
+        }
+        private void flowMain_DragOver(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop))
+                e.Effect = DragDropEffects.Link;
+            else
+                e.Effect = DragDropEffects.None;
         }
     }
 }
