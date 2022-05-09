@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.32126.317
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shortcut Pro", "Shortcut Pro\Shortcut Pro.csproj", "{56BFB0DB-2E28-4141-A354-CB266D6D2EC9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pluginShortcutPro", "pluginShortcutPro\pluginShortcutPro.csproj", "{DD49D8BF-736B-418D-88F1-1D790C63F630}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{56BFB0DB-2E28-4141-A354-CB266D6D2EC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56BFB0DB-2E28-4141-A354-CB266D6D2EC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56BFB0DB-2E28-4141-A354-CB266D6D2EC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD49D8BF-736B-418D-88F1-1D790C63F630}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD49D8BF-736B-418D-88F1-1D790C63F630}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD49D8BF-736B-418D-88F1-1D790C63F630}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD49D8BF-736B-418D-88F1-1D790C63F630}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
