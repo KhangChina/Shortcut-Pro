@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using DevExpress.XtraEditors;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -79,19 +80,18 @@ namespace Shortcut_Pro
            
 
         }
-        public Icon ExtractIconFromFilePath(string executablePath)
+        public Icon ExtractIconFromFilePath(string executablePath,string name)
         {
             Icon result = (Icon)null;
-
             try
             {
                 result = Icon.ExtractAssociatedIcon(executablePath);
             }
             catch (Exception)
             {
-                MessageBox.Show("Unable to extract the icon from the binary");
+                XtraMessageBox.Show("Shortcut not found: "+ name, "Error",  MessageBoxButtons.OK, MessageBoxIcon.Error);
+                deleteShortCut(name);
             }
-
             return result;
         }
     }

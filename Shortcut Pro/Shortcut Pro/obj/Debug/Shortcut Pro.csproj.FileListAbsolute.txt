@@ -1,7 +1,6 @@
 D:\Project\C#\Shortcut Pro\Shortcut Pro\Shortcut Pro\bin\Debug\Shortcut Pro.exe.config
 D:\Project\C#\Shortcut Pro\Shortcut Pro\Shortcut Pro\bin\Debug\Shortcut Pro.exe
 D:\Project\C#\Shortcut Pro\Shortcut Pro\Shortcut Pro\bin\Debug\Shortcut Pro.pdb
-D:\Project\C#\Shortcut Pro\Shortcut Pro\Shortcut Pro\obj\Debug\Shortcut Pro.csproj.AssemblyReference.cache
 D:\Project\C#\Shortcut Pro\Shortcut Pro\Shortcut Pro\obj\Debug\Shortcut Pro.csproj.SuggestedBindingRedirects.cache
 D:\Project\C#\Shortcut Pro\Shortcut Pro\Shortcut Pro\obj\Debug\Shortcut_Pro.Properties.Resources.resources
 D:\Project\C#\Shortcut Pro\Shortcut Pro\Shortcut Pro\obj\Debug\Shortcut Pro.csproj.GenerateResource.cache

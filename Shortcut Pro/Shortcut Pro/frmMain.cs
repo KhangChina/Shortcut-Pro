@@ -38,8 +38,16 @@ namespace Shortcut_Pro
             var data = shortCut.getData();
             foreach (var item in data)
             {
-                Icon theIcon = shortCut.ExtractIconFromFilePath(item["path"].ToString());
-                Image image = Bitmap.FromHicon(new Icon(theIcon, new Size(40, 40)).Handle);
+                Icon theIcon = shortCut.ExtractIconFromFilePath(item["path"].ToString(), item["name"].ToString());
+                Image image = null;
+                try
+                {
+                     image = Bitmap.FromHicon(new Icon(theIcon, new Size(40, 40)).Handle);
+                }
+                catch {
+                    image = null;
+                }
+               
 
                 usShortCut us = new usShortCut(item["name"].ToString(), item["note"].ToString(), item["path"].ToString(), image);
                 flowMain.Controls.Add(us);
